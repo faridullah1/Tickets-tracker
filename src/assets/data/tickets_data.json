@@ -1,0 +1,58 @@
+{
+	"data": [
+		{
+			"ticketId": 1, 
+			"createdAt": "10-1-2022", 
+			"updatedAt": "10-1-2022", 
+			"completedAt": "10-1-2022", 
+			"statusId": 1, 
+			"assigneeId": 1,
+		   	"requesterId": 1, 
+			"user": {
+				"userId": 101, 
+				"firstName": "xyz", 
+				"lastName": "xyz",
+				"email": "xyz@gmail.com"
+			},
+			"admin": "xyz",
+			"agent": "xyz", 
+			"requester": "xyz"
+		},
+		{
+			"ticketId": 2, 
+			"createdAt": "10-1-2022", 
+			"updatedAt": "10-1-2022", 
+			"completedAt": "10-1-2022", 
+			"statusId": 1, 
+			"assigneeId": 1,
+		   	"requesterId": 1, 
+			"user": {
+				"userId": 102, 
+				"firstName": "xyz", 
+				"lastName": "xyz",
+				"email": "xyz@gmail.com"
+			},
+			"admin": "xyz",
+			"agent": "xyz", 
+			"requester": "xyz"
+		},
+		{
+			"ticketId": 3, 
+			"createdAt": "10-1-2022", 
+			"updatedAt": "10-1-2022", 
+			"completedAt": "10-1-2022", 
+			"statusId": 1, 
+			"assigneeId": 1,
+		   	"requesterId": 1, 
+			"user": {
+				"userId": 103, 
+				"firstName": "xyz", 
+				"lastName": "xyz",
+				"email": "xyz@gmail.com"
+			},
+			"admin": "xyz",
+			"agent": "xyz", 
+			"requester": "xyz"
+		}
+	]
+}

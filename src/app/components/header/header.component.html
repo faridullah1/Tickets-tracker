@@ -1,0 +1,29 @@
+<header class="header">
+	<mat-toolbar class="toolbar">
+		<nav class="nav">
+			<div class="d-flex align-center">
+				<button mat-icon-button class="menu-icon" (click)="openSideNav()">
+					<mat-icon>menu</mat-icon>
+				</button>
+		
+				<h1 class="app-title"> {{ title }} </h1>
+			</div>
+
+			<ul>
+				<li routerLink="tickets" routerLinkActive="active"> Tickets </li>
+				<li routerLink="users" routerLinkActive="active"> Users </li>
+			</ul>
+		</nav>
+
+		<div class="profile" [matMenuTriggerFor]="userMenu">
+			<img src="assets/images/avatar.jpg" alt="Avatar" class="avatar">
+			<mat-icon style="cursor: pointer;">expand_more</mat-icon>
+		</div>
+		
+		<mat-menu #userMenu="matMenu">
+			<button class="logout-btn" mat-menu-item (click)="onLogout()">
+				 <mat-icon>logout</mat-icon>Logout
+			</button>
+		</mat-menu>
+	</mat-toolbar>
+</header>

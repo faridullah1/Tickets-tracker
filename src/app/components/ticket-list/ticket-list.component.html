@@ -1,0 +1,47 @@
+<div class="container">
+    <h1>Tickets</h1>
+    
+	<table class="table">
+		<thead>
+			<tr>
+				<th>Ticket Id</th>
+				<th>Created At</th>
+				<th>Updated At</th>
+				<th>Completed At</th>
+				<th>Status Id</th>
+				<th>Assignee Id</th>
+				<th>Requester Id</th>
+
+				<th>User Id</th>
+				<th>First Name</th>
+				<th>Last Name</th>
+				<th>Email</th>
+
+				<th>Admin</th>
+				<th>Agent</th>
+				<th>Requester</th>
+		 	</tr>
+		</thead>
+		
+		<tbody>
+			<tr *ngFor="let ticket of ticketList">
+				<td>{{ ticket.ticketId }}</td>
+				<td>{{ ticket.createdAt }}</td>
+				<td>{{ ticket.updatedAt }}</td>
+				<td>{{ ticket.completedAt }}</td>
+				<td>{{ ticket.statusId }}</td>
+				<td>{{ ticket.assigneeId }}</td>
+				<td>{{ ticket.requesterId }}</td>
+
+				<td>{{ ticket.user.userId }}</td>
+				<td>{{ ticket.user.firstName }}</td>
+				<td>{{ ticket.user.lastName }}</td>
+				<td>{{ ticket.user.email }}</td>
+
+				<td>{{ ticket.admin }}</td>
+				<td>{{ ticket.agent }}</td>
+				<td>{{ ticket.requester }}</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
