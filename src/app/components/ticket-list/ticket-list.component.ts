@@ -20,9 +20,8 @@ export class TicketListComponent implements OnInit
 	}
 
 	getTicketList(){
-		this.service.getTicket().subscribe({
+		this.service.getTickets().subscribe({
 			next: (resp) => {
-				console.log(resp);
 				this.ticketList = resp.data
 			}
 		});

@@ -13,7 +13,7 @@ export class TicketService {
 	Get tickets from assets folder
 	You can replace "assets/data/tickets_data.json" with your server API when needed
   */
-  getTicket(): Observable<any> {
+  getTickets(): Observable<any> {
 	return this.http.get('assets/data/tickets_data.json');
   }
 }
