@@ -13,11 +13,7 @@ export class HeaderComponent implements OnInit {
 	ngOnInit(): void {
 	}
 
-	openSideNav(): void {
-
-	}
-
 	onLogout(): void {
-		
+
 	}
 }
